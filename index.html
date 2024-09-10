@@ -5,18 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
-            height: 100vh;
+
+
+        body {
             width: 100vw;
-            background-color: azure;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+            background: #56CCF2;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.067),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.104),
+  100px 100px 80px rgba(0, 0, 0, 0.18)
+;
+
+        }
+
+
+        .profile-img-section {
+            width: 30%;
+            height: 100%;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+
+        .profile-data {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 16rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+
+        .section-title {
+            color: #56CCF2;  /* fallback for old browsers */
+            color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+            color: linear-gradient(to right, #2F80ED, #56CCF2);
+            font-weight: bold;
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+
+        .companies {
+            font-weight: bold;
+            color: rgb(44, 52, 49);
         }
     </style>
 </head>
 <body>
-    <h2>Heyyy</h2>
+    <div class="section1">
+    <div class ="profile-img-section">
+        <img src="img/1325724.png" alt="gojo" class ="profile-img">
+    </div>
+        <div class="profile-data">
+            <h1>Harissh</h1>
+            <h3>harisshks22cse@srishakthi.ac.in</h3>
+        </div>
+
+    </div>
+    <div class="section2">
+        <h1 class="section-title">Objective</h1>
+        <p>A resume objective, also known as a career objective, 
+        is a short statement that summarizes your professional goals 
+        and why you're applying for a job.
+    </p>
+    </div>
+    <div class="section3">
+            <h1 class="section-title">
+                Education
+            </h1>
+            <table class="ed-table">
+                <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Deg1</td>
+                <td>Sch1</td>
+                <td>95</td>
+            </tr>
+                <tr>
+                    <td>Deg2</td>
+                    <td>Sch2</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Deg3</td>
+                    <td>Sch3</td>
+                    <td>95</td>
+                </tr>
+            </table>
+    </div>
+    <div class="section4">
+
+    </div>
+    <div class="section5"></div>
 </body>
 </html>
