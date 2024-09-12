@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <style>
         * {
             margin: 0px;
@@ -14,8 +14,9 @@
         body {
             width: 100vw;
             background-color: #f5f5f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
             display: flex;
+            font-size: large;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -23,21 +24,23 @@
 
 
         .section1 {
+          position: sticky;
+          top: 0%;
+          padding-top: 20px;
             width: 70%;
-            height: 12rem;
+            height: 10rem;
             background: #4CA1AF;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #4CA1AF, #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            border-radius: 4px;
             display: flex;
             flex-direction: row;
             justify-content:start;
             align-items: center;
-            box-shadow:
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.067),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.104),
-  100px 100px 80px rgba(0, 0, 0, 0.18)
-;
+              box-shadow:
+              6.7px 6.7px 5.3px rgba(0, 0, 0, 0.067),
+              22.3px 22.3px 17.9px rgba(0, 0, 0, 0.104),
+              100px 100px 80px rgba(0, 0, 0, 0.18);
 
         }
 
@@ -65,24 +68,35 @@
             height: 8rem;
             width: 8rem;
             border-radius: 50%;
+            background: rgba(20, 20, 20, 0.15);
+              box-shadow: 0 8px 32px 0 rgba(13, 13, 13, 0.37);
+              backdrop-filter: blur( 1px );
+              -webkit-backdrop-filter: blur( 1px );
+              border-radius: 50%;
+              border: 1px solid rgba(13, 13, 13, 0.18);
+            padding: 1;
         
         }
 
 
         .section2 {
             width: 70%;
-            height: 8rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            font-size: large;
+            font-weight: 400;
+            padding-top: 20px;
+            gap: 7px;
         }
 
 
         .section3 {
             width: 70%;
-            height: 16rem;
+            padding-top: 20px;
             display: flex;
+            gap: 6px;
             flex-direction: column;
             justify-content: center;
             align-items: start;
@@ -91,7 +105,7 @@
 
         .section4 {
             width: 70%;
-            height: 9rem;
+            padding-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,13 +113,15 @@
         }
         .section5 {
             width: 70%;
-            height: 9rem;
+            padding-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
         }
         .section6 {
+          position: sticky;
+          bottom: 0%;
             width: 70%;
             height: 3rem;
             background: #4CA1AF;  /* fallback for old browsers */
@@ -118,28 +134,52 @@
             gap: 3rem;
 
         }
-
+        .section7 {
+            width: 70%;
+            padding-top: 20px;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
         .section-title {
             color: #56CCF2;  /* fallback for old browsers */
             color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
             color: linear-gradient(to right, #2F80ED, #56CCF2);
             font-weight: bold;
+            font-size: x-large;
         }
-
+          .p-style{
+            color: #0a0f11;  /* fallback for old browsers */
+            color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+            color: linear-gradient(to right, #2F80ED, #56CCF2);
+            font-weight: bold;
+          }
 
         .ed-table {
             width: 100%;
-            border: 1px solid gray;
+            border: 1px solid #343333;
             border-collapse: collapse;
+           
+        }
+        th{
+            height: 30px;
+            /* padding: 1rem; */
+            border: 1px solid #343333;
+            font-size: large;
         }
 
-
-        th,
         td {
-            padding: 1rem;
-            border: 1px solid gray;
+            /* padding: 1rem; */
+            height: 30px;
+            border: 1px solid #343333;
+            font-size: medium;
+            align-items: center;
+            border-spacing: 2px;
+            text-align: center;
         }
-
+        
 
         .companies {
             font-weight: bold;
@@ -153,13 +193,11 @@
         height: 40px;
         border-radius: 100%;
         border: none;
-        background-color:#56CCF2 ;
+        background-color:#0c0c0c ;
         }
-
         .phn:hover {
-        background-color:#2F80ED;
-        }
-        /* From Uiverse.io by McHaXYT */ 
+  background-color: #292b29;
+}
 .git-container {
   display: flex;
   justify-content: center;
@@ -216,25 +254,76 @@
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color:  #56CCF2;
 }
+.socialContainer {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1.2s;
+  border-radius: 15px 0 15px 0px;
+}
+
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 1.2s;
+}
+
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 1.2s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 1.2s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
     </style>
 </head>
 <body>
     <div class="section1">
     <div class ="profile-img-section">
-        <img src="img/1325724.png" alt="gojo" class ="profile-img">
+        <img src="img/myim.jpg" alt="harissh" class ="profile-img">
     </div>
         <div class="profile-data">
-            <h1>Harissh</h1>
+            <h1>Harissh K S </h1>
             <h3>harisshks22cse@srishakthi.ac.in</h3>
         </div>
 
     </div>
     <div class="section2">
         <h1 class="section-title">Objective</h1>
-        <p>A resume objective, also known as a career objective, 
-        is a short statement that summarizes your professional goals 
-        and why you're applying for a job.
+      
+        <p>
+          Motivated and goal-oriented college student seeking opportunities to apply my skills and knowledge in a dynamic environment. 
+          Eager to contribute to team success through hard work, attention to detail, and a passion for learning.
+          Open to leveraging my problem-solving abilities and technical expertise to grow within a forward-thinking organization
     </p>
     </div>
     <div class="section3">
@@ -242,81 +331,61 @@
                 Education
             </h1>
             <table class="ed-table">
-                <tr>
-                <th>Degree</th>
-                <th>Campus</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td>Deg1</td>
-                <td>Sch1</td>
-                <td>95</td>
-            </tr>
-                <tr>
-                    <td>Deg2</td>
-                    <td>Sch2</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                    <td>Deg3</td>
-                    <td>Sch3</td>
-                    <td>95</td>
-                </tr>
-            </table>
-    </div>
-    <div class="section4">
-        <h1 class ="section-title">Certificate</h1>
-        <li>NPTEL Certificate in Java</li>
-    </div>
+              <tr>
+                  <th>Institution</th>
+                  <th>Qualifications</th>
+                  <th>Year</th>
+              </tr>
+              <tr>
+                  <td>Sri Shakthi Institute of Engineering and Technology</td>
+                  <td>Bachelor of Engineering</td>
+                  <td>2022 - 2026</td>
+              </tr>
+              <tr>
+                  <td>Saraswathi Matric Higher Secondary School</td>
+                  <td>HSC</td>
+                  <td>2020 - 2021</td>
+              </tr>
+              <tr>
+                  <td>Jayam Matric Higher Secondary School</td>
+                  <td>SSLC</td>
+                  <td>2018 - 2019</td>
+              </tr>
+          </table>
+            </div>
+            <div class="section4">
+              <h1 class="section-title">Skills</h1>
+                <li><span class ="companies">Programming Languagues : </span>Java , Kotlin , C </li>
+                <li><span class ="companies">Mobile Development : </span>Android(Java , Kotlin)</li>
+                <li><span class ="companies">Web Development : </span>HTML , CSS</li>
+                <li><span class ="companies">Database : </span>MySQL , MongoDB.</li>
+                <li><span class ="companies">Development Tools : </span>Android Studio , IntelliJ IDEA , Visual Code Studio.</li>
+            </div>
+            <div class="section7">
+              <h1 class ="section-title">Projects</h1>
+                  <p class="p-style">3D-FPS shooting game</p>
+                  <li>Designed an FPS shooting game using C++</li>
+                  <p class="p-style">BB Bakes -A Bakery App</p>
+                  <li>Built a software application to order bakery products using Dart (Flutter)</li>
+                  <p class="p-style">Fake news detection </p>
+                  <li>Built a software program to detect fake news using Python</li>
+                  
+            </div>
+
     <div class="section5">
-        <h1 class="section-title">Skills</h1>
-        <li>Java</li>
-        <li>Kotlin</li>
-        <li>SQL</li>
-    </div>
-    <div class="section3">
-      <h1 class="section-title">
-          Education
-      </h1>
-      <table class="ed-table">
-          <tr>
-          <th>Degree</th>
-          <th>Campus</th>
-          <th>Score</th>
-      </tr>
-      <tr>
-          <td>Deg1</td>
-          <td>Sch1</td>
-          <td>95</td>
-      </tr>
-          <tr>
-              <td>Deg2</td>
-              <td>Sch2</td>
-              <td>95</td>
-          </tr>
-          <tr>
-              <td>Deg3</td>
-              <td>Sch3</td>
-              <td>95</td>
-          </tr>
-      </table>
-</div>
-<div class="section4">
-  <h1 class ="section-title">Certificate</h1>
-  <li>NPTEL Certificate in Java</li>
-</div>
-<div class="section5">
-  <h1 class="section-title">Skills</h1>
-  <li>Java</li>
-  <li>Kotlin</li>
-  <li>SQL</li>
-</div>
+      <h1 class ="section-title">Certificate</h1>
+      <li>NPTEL Certificate - Programming in Java</li>
+   </div>
     <div class="section6">
+      <a href="tel:+91 9790730924">        
         <button class="phn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon"><path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon">
+
+            <path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path>
+          </svg>
         </button>
 <div class="git-container">
-
+<a href="https://github.com/Harisshks" target="_blank">
   <button class="git flex-center">
     <svg
       viewBox="0 0 20 20"
@@ -362,35 +431,13 @@
     </svg>
   </button>
   </div>
+  <a class="socialContainer containerThree" href="https://www.linkedin.com/in/harissh-k-s-053a16274/" target="_blank">
+    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+      <path
+        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+      ></path>
+    </svg>
+  </a>
     </div>
 </body>
-<script>
-  let num = 100
-  const pi= 3.14
-  let str = "10"
-  let str1 = "10"
-  let bool = true
-  let nullvalue = null
-  let undefvalue = undefined
-  console.log(num);
-  console.log(pi);
-  console.log(str);
-  console.log(bool); 
-  console.log(nullvalue);
-  console.log(undefvalue);
-  console.log(str*str1)
-  let datajs = {
-    name : "Damon",
-    alive: true
-  } 
-  let datajson = {
-    "name" : "Stefan",
-    "alive": false 
-  }
-  console.log(datajs);
-  console.log(datajson);
-  let dataarray = [datajs,datajson,"Nina"]
-  console.log(dataarray);
-  
-</script>
 </html>
