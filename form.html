@@ -14,24 +14,53 @@
             <input type="number" id="phone" placeholder="Phone" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button class="btn" type="button" onclick="formdata()">Submit</button>
+            <input type="number" id="age" placeholder="Age" required>
+            <button class="btn" type="button" onclick="return formdata()">Submit</button>
         </form>
     </div>
 
     <script>
         function formdata() {
-            const name = document.getElementById("name").value;
-            const phone = document.getElementById("phone").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let age  = document.getElementById("age").value;
+            if(name !=="" && phone !== "" && email !== "" && password !== "" && age !==""){
+                if(name === "Hari"){
+                    console.log("Username already exists")
+                }
+                else{
+                    console.log("Success")
+                }
+            }
+            else{
+                console.log("Empty fields not allowed")
+            }
 
+            alert(name);
             console.log("Name: " + name);
             console.log("Phone: " + phone);
             console.log("Email: " + email);
             console.log("Password: " + password);
-        }
-    </script>
+            const data ={
+                username: name,
+                useremail: email,
+                userphone: phone,
+                userpassword: password,
+                userage :age>= 18 ? 'Major' : 'Minor'
+            }
+            const{username,useremail,userphone,userpassword,userage}=data
+            console.log(username,userage)
+            
 
+
+        }
+        let data1 = [1,2,3,4,5]
+        let data2 =['a','d','c','d','e','f']
+        let data3 = [...data1,...data2]
+        console.log(data3)
+        </script>
 </body>
 </html>
 
